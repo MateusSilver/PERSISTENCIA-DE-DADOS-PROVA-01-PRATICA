@@ -1,9 +1,10 @@
 create database universidade;
 
 CREATE TABLE curso (
-	iden int primary key,
+	iden int ,
     ano int,
-    nome varchar(255)
+    nome varchar(255),
+    PRIMARY KEY (iden, nome)
 );
 
 create table disciplina(
@@ -12,6 +13,8 @@ create table disciplina(
     iden_curso int,
 	foreign key (iden_curso) references curso(iden)
 );
+
+/*auxiliares*/
 
 select * from curso order by iden;
 select * from disciplina order by iden_curso;
