@@ -1,20 +1,20 @@
 public class CursoDisciplina {
     private int iden;
     private int ano;
-    private String nomeCurso;
-    private String nomeDisciplina;
+    private String nome;
+    private String disciplina;
     private int ch;
 
     public CursoDisciplina(int iden, int ano, String nomeCurso, String nomeDisciplina, int ch) {
         this.iden = iden;
         this.ano = ano;
-        this.nomeCurso = nomeCurso;
-        this.nomeDisciplina = nomeDisciplina;
+        this.nome = nomeCurso;
+        this.disciplina = nomeDisciplina;
         this.ch = ch;
     }
 
     public int getIden() {
-        return iden;
+        return this.iden;
     }
 
     public void setIden(int iden) {
@@ -30,26 +30,28 @@ public class CursoDisciplina {
     }
 
     public String getNomeCurso() {
-        return nomeCurso;
+        return this.nome;
     }
 
     public void setNomeCurso(String nomeCurso) {
-        this.nomeCurso = nomeCurso;
+        this.nome = nomeCurso;
     }
 
     public String getNomeDisciplina() {
-        return nomeDisciplina;
+        return this.disciplina;
     }
 
     public void setNomeDisciplina(String nomeDisciplina) {
-        this.nomeDisciplina = nomeDisciplina;
+        this.disciplina = nomeDisciplina;
     }
 
     public int getCh() {
-        return ch;
+        return this.ch;
     }
 
     public void setCh(int ch) {
         this.ch = ch;
     }
+
+
 }
